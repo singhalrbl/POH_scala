@@ -1,0 +1,48 @@
+scala> val msg = "Hello world"
+
+msg: String = Hello world
+
+scala>  val msg3 :String = "Hello world again"
+msg3: String = Hello world again
+
+scala> msg3 :String ="GoodBye Hello world"
+<console>:1: error: ';' expected but '=' found.
+       msg3 :String ="GoodBye Hello world"
+                    ^
+
+scala> msg3 = "Good Bye cruel world"
+<console>:12: error: reassignment to val
+       msg3 = "Good Bye cruel world"
+            ^
+
+scala> var greeting = "Hello world"
+greeting: String = Hello world
+
+scala> greeting = "Leave me alone world"
+greeting: String = Leave me alone world
+
+scala> println("greeting")
+greeting
+
+scala> println(greeting)
+Leave me alone world
+
+scala> def max(x:Int, y:Int) :Int ={
+  if(x>y)x
+  else y
+}
+     |      |      | max: (x: Int, y: Int)Int
+
+scala> def max(x:Int,y:Int,c:String) = if(x>y)x else c
+
+max: (x: Int, y: Int, c: String)Any
+
+scala> max(3,5,"x is greater")
+res6: Any = x is greater
+
+scala> var i=0
+while(i < args.length){
+  println(args(i))
+  i+=1
+}
+i: Int = 0
