@@ -11,6 +11,7 @@ object AcessingChar {
     println("hello"(0))
     println("hello"(1))
 
+
   }
 
 }
